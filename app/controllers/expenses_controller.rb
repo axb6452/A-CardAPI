@@ -4,7 +4,7 @@ class ExpensesController < ProtectedController
   # GET /expenses
   def index
     # @expenses = Expense.all
-    @expenses = current_user.expenses
+    @expenses = current_user.expenses.order('id DESC')
 
     render json: @expenses
   end
