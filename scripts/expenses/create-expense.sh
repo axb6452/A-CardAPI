@@ -12,7 +12,8 @@ curl "http://localhost:4741/expenses" \
       "price": "'"${PRICE}"'",
       "total_gallons": "'"${GALLONS}"'",
       "discount_rate": "'"${DISCOUNT}"'",
-      "net_total": "'"${NET}"'"
+      "net_total": "'"${NET}"'",
+      "station_id": "'"${STATIONID}"'"
     }
   }'
 

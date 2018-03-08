@@ -17,7 +17,7 @@ class ExpensesController < ProtectedController
   # POST /expenses
   def create
     # @expense = Expense.new(expense_params)
-    @expense = current_user.expenses.build(expense_params)
+    @expense = current_user.expenses.create(expense_params)
 
     if @expense.save
       render json: @expense, status: :created, location: @expense
@@ -48,6 +48,6 @@ class ExpensesController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def expense_params
-      params.require(:expense).permit(:vehicle, :plate, :price, :total_gallons, :discount_rate, :net_total)
+      params.require(:expense).permit(:vehicle, :plate, :price, :total_gallons, :discount_rate, :net_total, :station_id)
     end
 end
