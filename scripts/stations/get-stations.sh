@@ -2,7 +2,5 @@
 
 curl "http://localhost:4741/stations" \
   --include \
-  --request GET \
-  --header "Authorization: Token token=${TOKEN}"
-
+  --request GET
 echo

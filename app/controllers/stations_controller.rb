@@ -1,4 +1,4 @@
-class StationsController < ApplicationController
+class StationsController < OpenReadController
   before_action :set_station, only: [:show, :update, :destroy]
 
   # GET /stations

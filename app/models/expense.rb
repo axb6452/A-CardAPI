@@ -3,6 +3,6 @@
 class Expense < ApplicationRecord
   belongs_to :user
   belongs_to :station
-  validates :vehicle, :plate, :price, :total_gallons, :discount_rate,
-            :net_total, :user, presence: true
+  validates :vehicle, :plate, :total_gallons, :discount_rate,
+            :station_id, :user, presence: true
 end

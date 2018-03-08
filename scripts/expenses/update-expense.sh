@@ -7,9 +7,8 @@ curl "http://localhost:4741/expenses/${ID}" \
   "expense": {
     "vehicle": "'"${VEHICLE}"'",
     "plate": "'"${PLATE}"'",
-    "price": "'"${PRICE}"'",
     "total_gallons": "'"${GALLONS}"'",
     "discount_rate": "'"${DISCOUNT}"'",
-    "net_total": "'"${NET}"'"
+    "station_id": "'"${STATIONID}"'"
   }
 }'

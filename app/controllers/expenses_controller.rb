@@ -48,6 +48,6 @@ class ExpensesController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def expense_params
-      params.require(:expense).permit(:vehicle, :plate, :price, :total_gallons, :discount_rate, :net_total, :station_id)
+      params.require(:expense).permit(:vehicle, :plate, :total_gallons, :discount_rate, :station_id)
     end
 end
