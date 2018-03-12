@@ -29,7 +29,7 @@ This application is the back-end API for the A-Card Expense management portal. I
 9) After running every successive migration in my Rails API,I would run the migration to update the PostgreSQL database hosted on heroku.
 10) Created Stations data in SQL backend of deployed heroku postgreSQL database to include Shell, Sunoco, BP and Wawa with appropriate petrol and diesel prices.
 
-I found it particularly challenging recollecting the details behind the establishment of the one-many relationship between two entities. I had to reference a lot of online documentation, including the rails-api-cookbook-lab and rails-api-one-to-many docs. After a lot of educated searching and playing around in the rails console, I was able to understand the specificities of the one-many relationship. However, once this was done, the rest was fairly straight forward. 
+I found it particularly challenging recollecting the details behind the establishment of the one-many relationship between two entities. I had to reference a lot of online documentation, including the rails-api-cookbook-lab and rails-api-one-to-many docs. After a lot of educated searching and playing around in the rails console, I was able to understand the specificities of the one-many relationship. However, once this was done, the rest was fairly straight forward.
 
 ### Client Repository
 
@@ -48,6 +48,12 @@ https://files.acrobat.com/a/preview/d38cbbff-dc25-456b-bd52-c38710e06e55
 - post '/sign-in' => 'users#signin'
 - delete '/sign-out' => 'users#signout'
 - patch '/change-password' => 'users#changepw'
+
+### Dependency Installation
+
+- Run 'rbenv install 2.4.1' on command terminal of project directory (Bundler exists in this ruby version).
+- Change Gemfile Ruby version to 2.4.1 to match the version installed.
+- Install required gems using the 'bundle install' command.
 
 ### Deployed Paths
 
